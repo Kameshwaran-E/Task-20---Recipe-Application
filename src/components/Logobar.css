@@ -1,0 +1,83 @@
+.Logo-whole {
+  display: flex;
+  height: 7rem;
+  width: 100vw;
+  justify-content: space-between;
+  padding: 10px;
+  overflow: hidden;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 121, 116, 0.8799894957983193) 85%,
+    rgba(0, 212, 255, 0.22172619047619047) 100%
+  );
+}
+
+.Logo-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+  /* margin-left: 5px; */
+  /* margin-right: 0px; */
+  font-family: 'Dancing Script', cursive;
+}
+
+.Logo-left img {
+  margin-top: 0.6rem;
+  width: 50px;
+  margin-right: 5px;
+}
+
+.Logo-right {
+  padding: 5px;
+  margin-right: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  gap: 10px;
+  border-radius: 5px;
+  font-family: Times, serif, cursive;
+}
+
+.Logoo {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 560px) {
+  .Logo-whole {
+    height: 9rem;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .Logo-left {
+    position: relative;
+    top: -40px;
+    transform: scale(0.7);
+    left: -20px;
+  }
+
+  .Logo-left img {
+    transform: scale(1.1);
+  }
+
+  .Logo-right {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 3.6rem;
+    z-index: 20;
+    transform: scale(0.8);
+  }
+}
